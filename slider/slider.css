@@ -1,0 +1,56 @@
+* {
+    left: 50px;
+    margin: 0;
+  }
+  body {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .slider-contain {
+    height: 800px;
+    width: 350px;
+    padding-left: 100px;
+    padding-top: 100px;
+    border: solid gray 5px;
+    position: fixed;
+  }
+  #slider-number {
+    font-size: 50px;
+    position: fixed;
+    margin-left: 80px;
+  }
+  
+  .line {
+    display: flex;
+    width: 100px;
+    height: 1px;
+    background: black;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  .varticle-line {
+    height: 670px;
+    width: 10px;
+    background-color: black;
+    left: 380px;
+    position: fixed;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  #button {
+    width: 100px;
+    height: 150px;
+    margin-left: 230px;
+    position: absolute;
+    border-radius: 10px;
+    top: 55px;
+    padding: 0;
+  }
+  
+  #hr-line {
+    width: 95px;
+    height: 3px;
+    background-color: gray;
+  }
+  
