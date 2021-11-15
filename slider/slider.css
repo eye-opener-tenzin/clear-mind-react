@@ -10,7 +10,7 @@ body {
 
 }
 .slider-contain {
-  height: 1000px;
+  height: 260%;
   width: 550px;
   border: solid gray 5px;
   position: fixed;
@@ -48,11 +48,16 @@ td {
 }
 
 .varticle-line {
-  height: 750px;
+  height: 180%;
   border: solid black 5px;
   position: fixed;
   left: 450px;
-  top: 450px; 
+  top: 480px; 
+}
+input {
+  height: 35px;
+  width: 150px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px)  {

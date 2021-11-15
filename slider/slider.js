@@ -9,9 +9,6 @@ function genTable() {
     table += `<td>${numbers[row]}</td>`;
     table += `<td>-</td>`;
     table += `</tr>`;
-    // for (var col = 0; col < 2; col++) {
-    //   table += `<td >`;
-    // }
   }
   document.getElementById("grid").innerHTML = table;
 }
@@ -25,18 +22,19 @@ function sliderRange() {
 }
 
 function applySliderConfigs({ color, size, scale, defaultPosition }) {
-  if (color !== undefined) {
+ 
     btn.style.backgroundColor = color;
-  }
-  if (size !== undefined) {
+
     btn.style.height = size;
-  }
-  if (scale !== undefined) {
+
+  
+
     btn.innerHTML = scale;
-  }
-  if (defaultPosition !== undefined) {
+
+
+
     btn.style.top = defaultPosition;
-  }
+  
 };
 smallScreen.matches
   ? applySliderConfigs({ color: "red", size: "50px", scale: 0, defaultPosition: "0px"})
@@ -75,13 +73,14 @@ function buttonMove() {
         let currentTop = Number(
           e.target.style.top.slice(0, e.target.style.top.length - 2)
         );
-        let newPosition = Math.max(currentTop + difference, 200 - 150);
-        newPosition = Math.min(newPosition, 805 - 108);
-        e.target.style.top = `${newPosition}px`
+        let newPosition = Math.max(currentTop + difference, 250 - 150);
+        newPosition = Math.min(newPosition, 750 - 108);
+        console.log("np", newPosition)
+        // e.target.style.top = `${newPosition}px`
         start = e.clientY;
         applySliderConfigs({
           scale: 100 - Math.round(((newPosition - 50) / 650) * 100),
-          // defaultPosition: `${newPosition}px`
+          defaultPosition: `${newPosition}px`
         })
         console.log("big", newPosition)
       }
@@ -107,10 +106,46 @@ function buttonMove() {
   });
   
  
-  };
+};
+  
+
+
  
+function changeColor () {
+  let color = document.querySelector("#colorInputText").value;
+  if (color !== undefined) {
+    btn.style.backgroundColor = color
+  } else {
+    btn.style.backgroundColor = "green";
+  }
+  if (color === "black") {
+    btn.style.color = "white"
+  } else {
+    btn.style.color = "black";
+  }
+  
+ 
+ }
 
+function changeButtonSize() {
+  let height = document.querySelector("#height").value + "px";
+  btn.style.height = height;
+ 
+}
+  
+function changeScale() {
+  let scaleNumber = document.querySelector("#scale").value;  
+  scaleNumber = 100 - Math.round(((scaleNumber - 100) / 650) * 100);
 
+  console.log("SN", scaleNumber)
+  btn.innerHTML = scaleNumber
+  applySliderConfigs({
+    scale: scaleNumber,
+    defaultPosition: `${scaleNumber}px`
+  })
+  }
+ 
+ 
 
 
  
