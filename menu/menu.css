@@ -27,7 +27,7 @@
   
   .menu-container {
     display: flex;
-    margin-top: 40px;
+    margin-top: 25px;
     position: relative;
     justify-content: space-between;
     
@@ -36,9 +36,11 @@
   a {
     color: white;
     text-decoration: none;
+    font-size: 25px;
   }
   a:hover {
     color: gray;
+    text-transform: uppercase;
   }
   li {
     list-style-type: none;
