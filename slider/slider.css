@@ -1,4 +1,119 @@
-* {
+*{
+  padding: 0;
+  position: a;
+}
+
+body {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%);
+
+}
+.slider-contain {
+  height: 260%;
+  width: 550px;
+  border: solid gray 5px;
+  position: fixed;
+
+}
+
+table {
+
+  display: flex;
+  border: none;
+  position: relative;
+  top: 100px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 250px;
+}
+
+td {
+  border: 1px solid black;
+  border: none;
+  font-size: 50px;
+  padding: 0 0 5px 100px;
+  text-align: right;
+}
+#button {
+  height: 150px;
+  width: 75px;
+  border: solid black 1px;
+  border-radius: 20px;
+  position: absolute;
+  left: 420px;
+  font-size: 30px;
+}
+
+.varticle-line {
+  height: 180%;
+  border: solid black 5px;
+  position: fixed;
+  left: 450px;
+  top: 480px; 
+}
+input {
+  height: 35px;
+  width: 150px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px)  {
+  body{
+   top: 0px;
+
+  }
+
+  .slider-contain {
+    height: 600px;
+    width: 350px;
+    border: solid gray 5px;
+    position: relative;
+
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  table{
+    top: 50px;
+  }
+  td {
+      border: 1px solid black;
+      
+      height: 30px;
+      border: none;
+      font-size: 20px;
+      padding: 0 0 5px 50px;
+      text-align: right;
+    }
+    #button {
+      height: 50px;
+      width: 35px;
+      border: solid black 1px;
+      position: relative;
+      border-radius: 5px;
+      left: 190px;
+      font-size:20px;
+    }
+  
+  .varticle-line {
+    height: 400px;
+    border: solid black 1px;
+    position: absolute;
+    left: 200px;
+    padding: 0;
+    top: 50px;
+
+}
+}
+
+
+
+
+/* {
     left: 50px;
     margin: 0;
   }
@@ -6,6 +121,7 @@
     margin-top: 100px;
     margin-left: 50px;
   }
+
   .slider-contain {
     height: 800px;
     width: 350px;
@@ -14,6 +130,8 @@
     border: solid gray 5px;
     position: fixed;
   }
+
+
   #slider-number {
     font-size: 50px;
     position: fixed;
@@ -53,4 +171,43 @@
     height: 3px;
     background-color: gray;
   }
+
+  @media(max-width: 600px) {
+    body{
+      height: 600px;
+      width: 100px;
+      margin: 0;
+      padding: 0;
+    }
+    .slider-contain{
+      height: 500px;
+      width: 250px;
+      padding: 0;
+      position: relative;
+    }
+    #slider-number{
+      font-size: 25px;
+      margin-left: 0;
+      position: relative;
+    }
+    .line {
+      display: flex;
+      width: 30px;
+      height: 1px;
+      background: black;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+    .varticle-line {
+      height: 500px;
+      width: 7px;
+      background-color: black;
+      left: 200px;
+      position: absolute;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+    
+  } */
+
   
