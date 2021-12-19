@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider Component</title>
+    <title>Slider Component  </title>
     <link rel="stylesheet" href="slider.css">
 </head>
-<body>
-    <div class="slider-contain">
-        <table id="slider-number">
+      <body onload="genTable(); buttonMove()">
+          <h2>Button Slider</h2>
+          <input  type="text"   id="colorInputText" placeholder="Button Color" onkeypress="changeColor()">
+          <input  type="text; button"  id="height" placeholder="Button Height"  onkeypress="changeButtonSize()">
+          <input  type="text"  id="scale" placeholder="scale"  onkeypress="changeScale()">
+          <div class="slider-contain">
+            <table id="grid"></table>
+            <div class="varticle-line"></div>
+           <button id="button">
+              <hr>
+          </button>
+        </div>
+        <!-- <table id="slider-number">
           <tr>
             <th class="number">100</th>
             <th class="line"></th>
@@ -58,8 +68,8 @@
         <div class="varticle-line"></div>
         <button id="button">
           <hr id="hr-line">
-        </button>
-      </div>
+        </button> -->
+  
       <script src="slider.js"></script>
-</body>
+   </body>
 </html>
