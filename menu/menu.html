@@ -14,10 +14,10 @@
             <img  class="logo"  src="image/foodLogo.png" alt="restaurent logo" height="90px">
             <h1 class="name"><a href="#">Continental food court</a></h1>
         </div>
-        <ul class="menu-container">
-          <li><a href="#" class="main_menu">Asian</a>
+        <ul id="menu-container">
+          <li><a href="#"  onmouseover="menuDropDown(event)"   class="main_menu dropbtn" >Asian</a>
             <ul class="sub_menu">
-              <li><a href="#">Tibetan Dishes</a>
+              <li><a href="#" id="myDropdown" >Tibetan Dishes</a>
                 <ul class="sub_sub_menu">
                   <li><a href="#">Tsampa (རྩམ་པ།)</a></li>
                   <li><a href="#">Thenthuk (ཐུག་པ།)</a></li>
@@ -77,8 +77,8 @@
               <li><a>Afganistan Dishes</a></li>
             </ul>
           </li>
-          <li><a href="#" class="main_menu">African </a>
-            <ul class="sub_menu">
+          <li><a href="#" onmouseover="menuDropDown(event)"   class="main_menu dropbtn" >African </a>
+            <ul   class="sub_menu">
               <li><a> Nigerian Dishes</a>
                 <ul class="sub_sub_menu">
                   <li><a>Jollof Rice</a></li>
@@ -112,13 +112,13 @@
               <li><a>Ghanan Dishes</a></li>
             </ul>
           </li>
-          <li><a href="#" class="main_menu">Australian </a></li>
-          <li><a href="#" class="main_menu">Europian </a></li>
-          <li><a href="#" class="main_menu">South American </a></li>
-          <li><a href="#" class="main_menu">Nort American</a></li>
-          <li><a href="#" class="main_menu">African </a></li>
+          <li><a href="#" >South American </a></li>
+          <li><a href="#" >Europian </a></li>
+          <li><a href="#" >Australian </a></li>
+          <li><a href="#" >Nort American</a></li>
+          <li><a href="#" >African </a></li>
         </ul>
       </nav>
-    
+     <script src="menu.js"></script>
 </body>
 </html>
